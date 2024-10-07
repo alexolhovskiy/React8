@@ -1,0 +1,61 @@
+
+@import '../../common_scss-styles/common-templates';
+@import '../../common_scss-styles/details_product';
+
+.big-container{
+    background-color: #e8e8e8;
+}
+
+.banner {
+    width: 1600px;
+    height: 600px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background: url("../img/image_frame_84.png")no-repeat center;
+
+    &_container {
+        width: 1136px;
+        position: absolute;
+        top: 220px;
+        display: flex;
+        justify-content: flex-start;
+        gap: 10px;
+
+        &_rectangle {
+            margin-top: 14px;
+            width: 12px;
+            height: 98px;
+            background-color: #f16d7f;
+        }
+
+        &_box {
+            padding-left: 10px;
+
+            &_t1 {
+                font-family: Lato;
+                font-size: 60px;
+                line-height: 1.2;
+                font-weight: 900;
+                letter-spacing: 0.025em;
+                color: #222222;
+            }
+
+            &_t2 {
+                font-family: Lato;
+                font-size: 40px;
+                line-height: 1.2;
+                font-weight: 900;
+                letter-spacing: 0.025em;
+                color: #222222;
+
+                a {
+                    color: #f16d7f;
+                }
+            }
+        }
+    }
+}
+
+
+

@@ -1,0 +1,33 @@
+@import '../../common_scss-styles/common-templates';
+
+
+.catalog__right_top_item {
+    &_title {
+        @include common-text(14px,20px,700,uppercase,#6f6e6e);
+    }
+
+    // &_box1{
+    //     @include flex-layout(flex-start,0,0);
+    //     flex-wrap: wrap;
+    //     @include common-text(14px,20px,400,none,#6f6e6e);
+    //     &_el1 {
+    //         padding:5px;
+    //         // padding-right: 10px;
+    //         border-right: 1px solid #dfdfdf;
+    //     }
+    // }
+
+    &_box2 {
+        display:grid;
+        grid-template-columns: repeat(4,1fr);
+        justify-content: center;
+        justify-items: flex-start;
+        align-items: center;
+        @include common-text(14px,20px,400,none,#6f6e6e);
+
+        &_check {
+            width:15px;
+            height:15px;
+        }
+    }
+}

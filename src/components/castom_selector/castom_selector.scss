@@ -1,0 +1,36 @@
+
+@import '../../common_scss-styles/common-templates';
+
+
+.catalog__right_middle_sort {
+    @include flex-layout(flex-start,center,2px);
+    @include common-text(14px,26px,400,none,#6f6e6e);
+
+    &_label {
+        height: 30px;
+        padding-left: 8px;
+        padding-right: 8px;
+        @include flex-layout(center,center,0);
+        background: rgb(255, 255, 255);
+    }
+
+    &_box {
+        @include flex-layout(center,center,0);
+
+        &_text {
+            height: 30px;
+            padding-left: 8px;
+            padding-right: 8px;
+            @include flex-layout(center,center,0);
+            background: rgb(255, 255, 255);
+        }
+
+        &_img {
+            width: 30px;
+            height: 30px;
+            border-left: 1px solid #f3f3f3;
+            background: rgb(255, 255, 255);
+            @include flex-layout(center,center,0);
+        }
+    }
+}
